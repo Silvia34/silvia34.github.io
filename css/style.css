@@ -1,0 +1,229 @@
+/* Based on template from csslayoutgenerator.com */
+
+body {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Arial';
+}
+
+em {
+    font-size: 2em;
+    color: rgb(226, 84, 64);
+}
+
+h1,
+h2,
+h3,
+.bold-head {
+    font-weight: bold;
+    font-family: 'Futura';
+}
+
+h1 {
+    font-size: 1.6em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(226, 84, 64);
+}
+
+h3 {
+    font-size: 1.6em;
+    line-height: 1.6rem;
+}
+
+aside {
+    font-size: 0.8em;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+#byline {
+    font-weight: normal;
+    font-size: 0.7em;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#nav-icon {
+    text-align: right;
+    padding: 1% 2%;
+    font-size: 1.5em;
+    background-color: rgb(226, 84, 64);
+}
+
+
+#nav-desktop {
+    display: none;
+}
+
+#nav-mobile {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 1% 2%;
+    padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(226, 84, 64);
+}
+
+.previous {
+    color: black;
+}
+
+.next {
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+#nav-mobile li {
+    padding: 1em;
+    background-color: rgb(226, 84, 64);
+    border-bottom: 0.2em solid white;
+}
+
+header {
+    background-image: url(/images/banner-apollo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10em;
+    padding-top: 1%;
+}
+
+.left {
+    padding-left: 2%;
+    width: 32%;
+    float: left;
+    text-align: left;
+}
+
+.center {
+    width: 32%;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid rgb(226, 84, 64);
+}
+
+.right {
+    padding-right: 2%;
+    width: 32%;
+    float: left;
+    text-align: right;
+}
+
+div.intro {
+    padding-left: 2%;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+section {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4%;
+}
+
+#article3 {
+    padding-bottom: 4%;
+    background-color: black;
+}
+
+.text5 p {
+    color: white;
+}
+
+#article3 h2 {
+    color: white;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    text-align: right;
+    padding-right: 2%;
+}
+
+footer .bald-head {
+    font-weight: normal;
+}
+
+/* Media Quires
+-----------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+
+    #article1 {
+        display: flex;
+        align-content: flex-start;
+        padding: 5%;
+    }
+
+    #article2 {
+        display: flex;
+        align-content: flex-start;
+        padding: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #nav-icon {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+
+    #nav-desktop {
+        display: inline;
+        overflow: hidden;
+        background-color: rgb(226, 84, 64);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    #nav-desktop li {
+        width: 19%;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 1%;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    body {
+        margin-top: 27px;
+    }
+
+    header {
+        height: 312px;
+        background-image: url(/images/banner-apollo-big.jpg);
+        background-size: 100% 100%;
+    }
+
+
+
+}
